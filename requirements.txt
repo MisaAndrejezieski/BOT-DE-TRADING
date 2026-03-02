@@ -10,7 +10,7 @@ schedule>=1.2.0
 requests>=2.31.0
 
 # Database
-sqlite3  # built-in
+# sqlite3 is built-in and should not be installed via pip
 
 # Telegram
 python-telegram-bot>=20.0

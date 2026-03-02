@@ -34,7 +34,9 @@ except ImportError:
 
 if missing:
     print('Erro: bibliotecas necessárias não encontradas: ' + ', '.join(missing))
-    print('Por favor, execute `scripts\setup_windows.bat` e ative o ambiente virtual antes de rodar.\n')
+    print('Por favor, execute o script `scripts\\setup_windows.bat` para criar/ativar o ambiente virtual e instale as dependências.')
+    print('Exemplo:')
+    print('   powershell> scripts\\setup_windows.bat')
     sys.exit(1)
 
 #--------------------------------------------------------------------------------
