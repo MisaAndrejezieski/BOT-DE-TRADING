@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Database
+*.db
+*.sqlite3
+*.db-journal
+
+# Logs
+logs/
+*.log
+data/logs/*
+
+# Configurações locais
+.env
+config_local.py
+config.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Arquivos de dados
+data/history/*
+!data/history/.gitkeep
+data/exports/*
+
+# Modelos ML
+ml/models/*
+!ml/models/.gitkeep
+
+# Relatórios
+*.html
+*.pdf
+reports/*
+!reports/.gitkeep
+
+# Backtest results
+backtest/results/*
+!backtest/results/.gitkeep
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# GitHub Desktop
+.DS_Store
