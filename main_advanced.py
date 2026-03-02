@@ -10,7 +10,34 @@ import sys
 import threading
 from datetime import datetime
 import time
-import pandas as pd
+
+#--------- importuração das dependências externas --------------------------------
+# these libraries must be installed via requirements.txt; if missing, show a clear
+# error message and exit gracefully.
+missing = []
+try:
+    import pandas as pd
+except ImportError:
+    missing.append('pandas')
+try:
+    import numpy as np
+except ImportError:
+    missing.append('numpy')
+try:
+    import ccxt
+except ImportError:
+    missing.append('ccxt')
+try:
+    from dotenv import load_dotenv
+except ImportError:
+    missing.append('python-dotenv')
+
+if missing:
+    print('Erro: bibliotecas necessárias não encontradas: ' + ', '.join(missing))
+    print('Por favor, execute `scripts\setup_windows.bat` e ative o ambiente virtual antes de rodar.\n')
+    sys.exit(1)
+
+#--------------------------------------------------------------------------------
 
 # Importações do projeto
 from core.exchange import ExchangeManager
